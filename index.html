@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        h2 {
+            color: #666;
+        }
+
+        .highlight {
+            background-color: #e7f3ff;
+            padding: 10px;
+            border-left: 4px solid #2196F3;
+            margin: 20px 0;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>¡Bienvenido a mi página web!</h1>
+
+        <h2>Acerca de esta página</h2>
+        <p>Esta es una página HTML básica que incluye:</p>
+        <ul>
+            <li>Estructura HTML5 semántica</li>
+            <li>Estilos CSS internos</li>
+            <li>JavaScript básico</li>
+            <li>Diseño responsive</li>
+        </ul>
+
+        <div class="highlight">
+            <p><strong>¡Importante!</strong> Esta página es completamente funcional y lista para usar.</p>
+        </div>
+
+        <h2>Interactividad</h2>
+        <p>Haz clic en el botón para ver un ejemplo de JavaScript:</p>
+        <button onclick="mostrarMensaje()">¡Haz clic aquí!</button>
+
+        <h2>Contacto</h2>
+        <p>Si tienes alguna pregunta, no dudes en contactarme.</p>
+        <p><strong>Email:</strong> ejemplo@correo.com</p>
+        <p><strong>Teléfono:</strong> +1 234 567 8900</p>
+    </div>
+
+    <script>
+        function mostrarMensaje() {
+            alert('¡Hola! JavaScript está funcionando correctamente.');
+        }
+
+        // Agregar fecha actual
+        document.addEventListener('DOMContentLoaded', function () {
+            const fecha = new Date().toLocaleDateString('es-ES');
+            console.log('Página cargada el:', fecha);
+        });
+    </script>
+</body>
+
+</html>
